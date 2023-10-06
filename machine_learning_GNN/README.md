@@ -51,3 +51,13 @@ To execute the notebook:
 - Always make sure to use appropriate computational resources as some graph-based models can be memory intensive.
 - The dataset's size and the model's depth can affect training times significantly.
 - Adjust hyperparameters (like learning rate, number of epochs, etc.) based on convergence and performance.
+
+## Authors
+
+Chenxi Gao
+gao.chenx@northeastern.edu
+
+## Version History
+
+* 0.1
+    * Initial Release
