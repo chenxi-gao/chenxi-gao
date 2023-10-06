@@ -1,0 +1,4 @@
+Number of unique gene names in chr21_genes.txt: 285
+Number of unique gene names in HUGO_genes.txt: 11828
+Number of common gene symbols found: 204
+Output stored in OUTPUT/intersection_output.txt
