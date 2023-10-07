@@ -1,7 +1,7 @@
 # SBATCH Script README
 
 ## Overview
-This repository contains an SBATCH script for a bioinformatics pipeline designed to process and analyze Next Generation Sequencing (NGS) data. The script primarily focuses on handling reads from the organism "Rhodo", though the code structure permits scalability for other organisms in the future. The process includes data retrieval, trimming, genome assembly, and assembly analysis.
+This repository contains an SBATCH script for a bioinformatics pipeline designed to process and analyze Next Generation Sequencing (NGS) data. The script primarily focuses on handling reads from the organism "Rhodo" and "Yersinia", though the code structure permits scalability for other organisms in the future. The process includes data retrieval, trimming, genome assembly, and assembly analysis.
 
 ## Files Included:
 1. **Main SBATCH Script**: The master script that dictates the workflow, manages resources, and initiates the subscripts.
