@@ -37,12 +37,12 @@ This repository encompasses a diverse range of projects and scripts, providing a
 - **Description:** A suite of scripts for various bioinformatics operations such as FASTA file statistics, finding common gene categories, and splitting protein sequences based on secondary structures.
 - **Key Tools:** `nt_fasta_stats.py`, `find_common_cats.py`, `gene_names_from_chr21.py`, `get_gene_level_information.py`, `intersection_of_gene_names.py`, `secondary_structure_splitter.py`.
 - **Detailed Instructions:** Check individual tool READMEs provided in the respective links.
-- [Nucleotide Fasta Statistics](./Bioinformatics_Tool_Suite/fasta_stats/README.md)
-- [Find Common Categories](./Bioinformatics_Tool_Suite/find_common_cats/README.md)
-- [Gene Names from Chromosome 21](./Bioinformatics_Tool_Suite/gene_names_from_chr21/README.md)
-- [Get Gene Level Information](./Bioinformatics_Tool_Suite/get_gene_level_information/README.md)
-- [Intersection of Gene Names](./Bioinformatics_Tool_Suite/intersection_of_gene_names/README.md)
-- [Secondary Structure Splitter](./Bioinformatics_Tool_Suite/ss_spliter/README.md)
+-- [Nucleotide Fasta Statistics](./Bioinformatics_Tool_Suite/fasta_stats/README.md)
+-- [Find Common Categories](./Bioinformatics_Tool_Suite/find_common_cats/README.md)
+-- [Gene Names from Chromosome 21](./Bioinformatics_Tool_Suite/gene_names_from_chr21/README.md)
+-- [Get Gene Level Information](./Bioinformatics_Tool_Suite/get_gene_level_information/README.md)
+-- [Intersection of Gene Names](./Bioinformatics_Tool_Suite/intersection_of_gene_names/README.md)
+-- [Secondary Structure Splitter](./Bioinformatics_Tool_Suite/ss_spliter/README.md)
 
 ---
 
