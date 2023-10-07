@@ -6,7 +6,7 @@ Because my AWS service trial period has ended, I have recorded detailed document
 [Please click this link to view](https://www.notion.so/TORQATA-PIZZA-BUSINESS-7375585a4b3e4d7c9d028f9c4261bc9b)
 # Click Here 👆
 
-![flowchart](https://github.com/chenxi-gao/workSample/blob/main/BINF_data_pipeline/BINF_data_pipeline.png)
+![flowchart](https://github.com/chenxi-gao/workSample/blob/main/AWS_stream_data_pipeline/workflow_torqata.png)
 
 ## Overview
 Pizza Data Reporting Tool offers a comprehensive analysis of pizza-related data, providing insights into the top-selling pizza combinations across different U.S. states.
