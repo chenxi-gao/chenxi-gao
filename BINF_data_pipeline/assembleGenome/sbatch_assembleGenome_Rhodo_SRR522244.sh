@@ -1,7 +1,7 @@
 #!/bin/bash                             
 # tells the system that this is a bash file
 #SBATCH --partition=short               # choose from debug, express, or short
-#SBATCH --job-name=Rhodo
+#SBATCH --job-name=[NAME]
 #SBATCH --time=04:00:00                 # the code pieces should run in far less than 4 hours
 #SBATCH -N 1                            # nodes requested
 #SBATCH -n 1                            # task per node requested
@@ -9,8 +9,8 @@
 
 echo "Starting our analysis $(date)"  
 
-NAME="Rhodo"  # in future, we will define this as part of a config file
-SRR_ID=SRR522244  # in future, we will define this as part of a config file
+NAME=$1  # in future, we will define this as part of a config file
+SRR_ID=$2  # in future, we will define this as part of a config file
 
 echo "$NAME SRR reads to process: $SRR_ID"
 
