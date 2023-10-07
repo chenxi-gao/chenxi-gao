@@ -9,7 +9,7 @@ Welcome to the Bioinformatics Tool Suite! This collection comprises a range of s
   $ python3 ./nt_fasta_stats.py --infile INPUT_FASTA_FILE --outfile OUTPUT_STATS_FILE
   ```
 - **Output:** Tabulated statistics for each sequence, with details on nucleotide counts, sequence length, and GC percentage.
-- [Detailed Documentation](#Nucleotide-Fasta-Statistics)
+- [Detailed Documentation](#[Nucleotide-Fasta-Statistics](https://github.com/chenxi-gao/workSample/tree/main/python_scripts/fasta_stats))
 
 ## 2. **Find Common Categories** (`find_common_cats.py`)
 - **Purpose:** Identifies and describes common gene categories from two input files.
@@ -63,6 +63,9 @@ Welcome to the Bioinformatics Tool Suite! This collection comprises a range of s
 ---
 
 **Author:** Chenxi Gao
+
 **Contact:** gao.chenx@northeastern.edu
+
 **Version:** 1.0
+
 **Last Updated:** 10-6-2023
