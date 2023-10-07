@@ -1,35 +1,42 @@
-# Project Title
+# Find Common Categories
 
-find_common_cats.py
+## Overview
 
+The `find_common_cats.py` script processes two input files containing genes and their associated categories, and then outputs the occurrence count of each category along with its description. This tool is especially useful for researchers and bioinformaticians looking to analyze the distribution of gene categories based on the data from the input files.
 
-## Description
+## Dependencies
 
-### find_common_cats.py
+- Python 3.x
+- `collections`
+- `argparse`
+- `get_file.io_utils` (ensure the module and its function `get_filehandle` are available)
 
-This program will count how many genes are in each category based on data from the input file.
+## Usage
 
+You can execute the script using the following command:
 
-## Getting Started
+```bash
+$ python3 find_common_cats.py -i1 [PATH_TO_FILE1] -i2 [PATH_TO_FILE2]
+```
 
-### Dependencies
+Replace `[PATH_TO_FILE1]` and `[PATH_TO_FILE2]` with the paths to your input files. 
 
-* on a python 3.10 environment
+### Input Files
 
-### Installing
+1. `chr21_genes.txt` (or equivalent file specified by `-i1`): This file should contain gene data including the category for each gene.
+2. `chr21_genes_categories.txt` (or equivalent file specified by `-i2`): This file should map gene categories to their descriptions.
 
-* freedownload from github
+The script expects the data in these files to be tab-separated.
 
-### Executing program
+### Output
 
-open your terminal on mac, windows
+The script will generate an output file named `categories.txt` in the `OUTPUT` directory. This file will have three columns: `Category`, `Occurrence`, and `Description`, representing the gene category, its occurrence count, and its description respectively.
 
-A sample command for executing:
-$ python3 find_common_cats.py -i1 test_data/chr21_genes.txt -i2 test_data/chr21_genes_categories.txt
+## Function Descriptions
 
-## Help
-
-This is a case-insensitive scripts
+- `get_file_args()`: Parses the command line arguments for the input files.
+- `get_cat_num(fh_gen)`: Returns a dictionary mapping gene categories to their counts based on the data from the first input file.
+- `get_cat_des_dict(fh_cat)`: Returns a dictionary mapping gene categories to their descriptions based on the data from the second input file.
 
 ## Authors
 
