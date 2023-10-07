@@ -11,6 +11,7 @@ This document provides an overview and instructions for three main pipelines use
   ```bash
   sbatch sbatch_script_name.sh [NAME] [SRR_ID]
   ```
+  [Genomic Data Analysis Pipeline](./assembleGenome/README.md)
 
 ### 2. Transcriptome Analysis Pipeline
 
@@ -21,6 +22,7 @@ This document provides an overview and instructions for three main pipelines use
   ```bash
   sbatch sbatch_transcriptome.sh [NAME] [SRR_ID]
   ```
+  [Transcriptome Analysis Pipeline](./assembleTranscriptome/README.md)
 
 ### 3. RNAseq Alignment Pipeline
 
@@ -31,6 +33,7 @@ This document provides an overview and instructions for three main pipelines use
   ```bash
   sbatch sbatch_alignRNAseq.sh [NAME] [SRR_ID]
   ```
+  [RNAseq Alignment Pipeline](./shortReadAlignment/README.md)
 
 ---
 
