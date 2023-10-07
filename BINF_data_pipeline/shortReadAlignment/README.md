@@ -28,6 +28,11 @@ sbatch sbatch_alignRNAseq.sh [NAME] [SRR_ID]
 
 Replace `[NAME]` with the desired output name and `[SRR_ID]` with the specific SRR ID of the dataset.
 
+example:
+```bash
+sbatch sbatch_alignRNAseq.sh Rhodo SRR21973231
+```
+
 ### Script Descriptions
 
 1. **Main SLURM script (`sbatch_alignRNAseq.sh`):** The master script that manages the entire pipeline. It takes two arguments, NAME (dataset or sample name) and SRR_ID (unique identifier for the dataset on the SRA database).
