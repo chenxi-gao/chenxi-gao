@@ -21,10 +21,21 @@ The pipeline is structured in several main steps:
 Submit the main SLURM script to SLURM:
 
 ```bash
-sbatch sbatch_transcriptome.sh [NAME] [SRR_ID]
+sbatch sbatch_transcriptome_SE.sh [NAME] [SRR_ID]
+```
+```bash
+sbatch sbatch_transcriptome_PE.sh [NAME] [SRR_ID]
 ```
 
 Replace `[NAME]` with the desired output name and `[SRR_ID]` with the specific SRR ID of the dataset.
+
+Example:
+```bash
+sbatch sbatch_transcriptome_SE.sh Rhodo SRR21973231
+```
+```bash
+sbatch sbatch_transcriptome_PE.sh Sinorhizobium ERR11631749
+```
 
 ### Script Descriptions
 
