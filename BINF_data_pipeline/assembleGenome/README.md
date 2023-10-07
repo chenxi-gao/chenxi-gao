@@ -24,6 +24,13 @@ sbatch sbatch_script_name.sh [NAME] [SRR_ID]
 ```
 
 Replace `[NAME]` with the desired output name and `[SRR_ID]` with the specific SRR ID of the dataset.
+example: 
+```bash
+sbatch sbatch_script_name.sh Rhodo SRR522244
+```
+```bash
+sbatch sbatch_script_name.sh Yersinia SRR26255229
+```
 
 ### Script Descriptions
 
