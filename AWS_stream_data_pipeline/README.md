@@ -1,4 +1,5 @@
 # AWS-based stream data pipeline and data analyze.
+This is a demo project I wrote for Torqata using a series of AWS services, aimed at helping me become familiar with common data processing tools on the AWS cloud platform.
 Because my AWS service trial period has ended, I have recorded detailed documentation for this project using **Notion**. 
 # Click Here 👇
 [Please visit this link to view](https://www.notion.so/TORQATA-PIZZA-BUSINESS-7375585a4b3e4d7c9d028f9c4261bc9b)
