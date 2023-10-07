@@ -35,12 +35,12 @@ Pizza Data Reporting Tool offers a comprehensive analysis of pizza-related data,
 
 ## Setup and Installation
 
-1. Set up an **Amazon Redshift cluster** with the required configurations.
-2. Configure **AWS API Gateway** to handle incoming order requests.
-3. Create and setup a **MySQL database in AWS RDS** for static data.
-4. Ensure setup and permissions for **AWS Glue Crawlers** and ETL jobs.
+1. Set up an **`Amazon Redshift cluster`** with the required configurations.
+2. Configure **`AWS API Gateway`** to handle incoming order requests.
+3. Create and setup a **`MySQL database in AWS RDS`** for static data.
+4. Ensure setup and permissions for **`AWS Glue Crawlers`** and ETL jobs.
 5. Use Python scripts to simulate data or connect to your live environment.
-6. Set up and configure **AWS Lambda** for any custom data processing or refreshing tasks.
+6. Set up and configure **`AWS Lambda`** for any custom data processing or refreshing tasks.
 
 ## Performance and Optimization
 
