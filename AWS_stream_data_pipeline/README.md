@@ -1,6 +1,8 @@
 # AWS-based stream data pipeline and data analyze.
 This is a demo project I wrote for Torqata using a series of AWS services, aimed at helping me become familiar with common data processing tools on the AWS cloud platform.
-<img src="https://github.com/chenxi-gao/workSample/blob/main/AWS_stream_data_pipeline/workflow_torqata.png" alt="flowchart" width="200" height="200">
+
+<img src="https://github.com/chenxi-gao/workSample/blob/main/AWS_stream_data_pipeline/workflow_torqata.png" alt="flowchart" width="1239" height="642">
+
 Because my AWS service trial period has ended, I have recorded detailed documentation for this project using **Notion**. 
 # Click Here 👇
 [Please click this link to view](https://www.notion.so/TORQATA-PIZZA-BUSINESS-7375585a4b3e4d7c9d028f9c4261bc9b)
