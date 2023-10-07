@@ -1,6 +1,7 @@
-# Pizza Data Reporting Tool
+# AWS-based stream data pipeline and data analyze.
 Because my AWS service trial period has ended, I have recorded detailed documentation for this project using **Notion**. 
-[Please go to this website](https://www.notion.so/TORQATA-PIZZA-BUSINESS-7375585a4b3e4d7c9d028f9c4261bc9b)
+# Click Here 👇
+[Please visit this link to view](https://www.notion.so/TORQATA-PIZZA-BUSINESS-7375585a4b3e4d7c9d028f9c4261bc9b)
 
 ## Overview
 Pizza Data Reporting Tool offers a comprehensive analysis of pizza-related data, providing insights into the top-selling pizza combinations across different U.S. states.
