@@ -12,8 +12,8 @@
 
 # Usage: sbatch sbatch_transcriptome.sh
 
-NAME="Sinorhizobium"
-SRR_ID=ERR11631749
+NAME=$1
+SRR_ID=$2
 
 echo "Starting our analysis $(date)"  
 
