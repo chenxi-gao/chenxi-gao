@@ -12,8 +12,8 @@
 
 # Usage: sbatch sbatch_transcriptome.sh
 
-NAME="Rhodo"
-SRR_ID=SRR21973231
+NAME=$1
+SRR_ID=$2
 
 echo "Starting our analysis $(date)"  
 
