@@ -1,39 +1,61 @@
-# Project Title
-
-gene_names_from_chr21.py
+# Gene Names from Chromosome 21 Script
 
 ## Description
 
-### gene_names_from_chr21.py
+This script allows users to query gene descriptions based on a gene symbol. The data is sourced from an input file, and the gene description corresponding to the input gene symbol is displayed to the user.
 
-This program will ask the user to enter a gene symbol
-and then prints the description for that gene based on data from the input file.
+For example, given a file containing gene symbols and their descriptions, the program will prompt the user to enter a gene symbol. If the gene exists in the file, its description will be printed. The user can continue querying for gene symbols until they decide to exit the program.
 
+## Requirements
 
-## Getting Started
+- Python 3.x
+- The `get_file.io_utils` library (or make sure that the `get_filehandle` function is available in the mentioned module)
 
-### Dependencies
+## Usage
 
-* on a python 3.10 environment
+To execute the program, use the following command:
 
-### Installing
+```
+$ python3 gene_names_from_chr21.py -i [path_to_input_file]
+```
 
-* freedownload from github
+Replace `[path_to_input_file]` with the path to the gene data file. The gene data file should be formatted with gene names in the first column and descriptions in the second column, separated by tabs. The first line (header) of the file will be skipped.
 
-### Executing program
+## Example
 
-open your terminal on mac, windows
+Assuming the script is run with a `chr21_genes.txt` input file like this:
 
-A sample command for executing:
-$ python3 gene_names_from_chr21.py -i test_data/chr21_genes.txt
+```
+GeneSymbol    Description
+GENE1         This is a description for gene 1.
+GENE2         This is a description for gene 2.
+```
 
-## Help
+When the script is executed:
 
-This is a case-insensitive scripts
+```
+$ python3 gene_names_from_chr21.py -i chr21_genes.txt
+```
+
+The user will be prompted:
+
+```
+Enter gene name of interest. Type quit to exit:
+```
+
+On entering `GENE1`, the script will display:
+
+```
+GENE1 found! Here is the description:
+This is a description for gene 1.
+```
+
+The user can continue querying for other gene symbols or type `quit` to exit the program.
 
 ## Authors
 
 Chenxi Gao
+
 gao.chenx@northeastern.edu
 
 ## Version History
