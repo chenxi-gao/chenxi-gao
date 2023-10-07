@@ -8,8 +8,8 @@
 
 # Usage: sbatch sbatch_alignRNAseq.sh 
 
-NAME="Rhodo"  # in future, we will define this as part of a config file
-SRR_ID=SRR21973231  # in future, we will define this as part of a config file
+NAME=$1  # in future, we will define this as part of a config file
+SRR_ID=$2  # in future, we will define this as part of a config file
 GMAPDb_PATH="/home/gao.chenx/BINF_data_pipeline/assembleGenome/data/assembled_data/Rhodo/contigs.fasta"
 
 echo "Starting our analysis $(date)"  
