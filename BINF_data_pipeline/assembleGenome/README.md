@@ -1,44 +1,86 @@
-# SBATCH Script README
+## Genomic Data Analysis Pipeline
 
-## Overview
-This repository contains an SBATCH script for a bioinformatics pipeline designed to process and analyze Next Generation Sequencing (NGS) data. The script primarily focuses on handling reads from the organism "Rhodo" and "Yersinia", though the code structure permits scalability for other organisms in the future. The process includes data retrieval, trimming, genome assembly, and assembly analysis.
+This document provides an overview and instructions for the Genomic Data Analysis Pipeline that downloads, trims, assembles, and analyzes Rhodobacter spheroides Next-Generation Sequencing (NGS) reads.
 
-## Files Included:
-1. **Main SBATCH Script**: The master script that dictates the workflow, manages resources, and initiates the subscripts.
-2. **getNGS.sh**: Retrieves the NGS reads using `fasterq-dump`.
-3. **trim.sh**: Trims the raw reads using `Trimmomatic` to remove any undesirable sequences or low-quality reads.
-4. **runSpades.sh**: Assembles the trimmed reads into a genome using the `SPAdes` genome assembler.
-5. **runQuast.sh**: Analyzes the quality of the assembled genome using `Quast`.
+### Overview
 
-## Usage:
+The pipeline is structured in four main steps:
+1. Downloading the NGS data using `fasterq-dump`.
+2. Trimming the raw reads to remove any low-quality data using `trimmomatic`.
+3. Assembling the trimmed reads using `spades.py` to construct the genome.
+4. Analyzing the quality and statistics of the assembled genome using `quast.py`.
 
-### 1. Submission:
-Submit the main SBATCH script to an SLURM job scheduler using the command:
+### Requirements
+
+- SLURM job scheduler for managing the jobs.
+- The Anaconda environment with the required tools (`fasterq-dump`, `trimmomatic`, `spades.py`, and `quast.py`) installed.
+
+### Execution
+
+Submit the main SLURM script (`sbatch_script_name.sh`) to SLURM:
+
 ```bash
-sbatch [SBATCH_SCRIPT_NAME].sh
+sbatch sbatch_script_name.sh [NAME] [SRR_ID]
 ```
 
-### 2. Directories & Naming:
-By default, the organism's name is set as "Rhodo" and its corresponding SRR ID as "SRR522244". The data for each organism is organized into separate directories (e.g., raw_data, trimmed_data, assembled_data) for clarity.
+Replace `[NAME]` with the desired output name and `[SRR_ID]` with the specific SRR ID of the dataset.
 
-### 3. Output:
-All standard outputs and errors from each step are redirected to respective log files under the `logs/` directory, named according to the pattern: `[JOB_NAME]-[JOB_ID]-[STAGE].log` and `[JOB_NAME]-[JOB_ID]-[STAGE].err`.
+### Script Descriptions
 
-### 4. Dependencies:
-The script assumes the availability of:
-- Anaconda environment with specific modules (Anaconda3/2021.11) loaded.
-- Pre-installed tools within the conda environment: `fasterq-dump`, `Trimmomatic`, `SPAdes`, and `Quast`.
+1. **Main SLURM script (`sbatch_script_name.sh`):** This is the primary script that coordinates the entire pipeline. It accepts two arguments, NAME (name of the dataset or sample) and SRR_ID (unique identifier for the dataset on the SRA database).
 
-## Modifications:
-To adapt the script for another organism:
-- Update the `NAME` variable with the new organism's name.
-- Update the `SRR_ID` variable with the appropriate Sequence Read Archive (SRA) ID.
-- Ensure that all data paths and directory structures match your environment.
+2. **getNGS.sh:** Downloads NGS data using `fasterq-dump` from the SRA database.
 
-## Important Notes:
-- Always backup your data before running any new script or making changes.
-- Regularly monitor log files to ensure that the pipeline runs smoothly without errors.
-- If using the script in a different environment, ensure all dependencies are correctly installed and paths are correctly specified.
+   Usage:
+   ```bash
+   bash getNGS.sh [SRR_ID] [NAME]
+   ```
+
+3. **trim.sh:** Trims the raw reads using Trimmomatic to remove any adapters and low-quality data. It uses the Illumina adapter sequences for trimming.
+
+   Usage:
+   ```bash
+   bash trim.sh [SRR_ID] [NAME]
+   ```
+
+4. **runSpades.sh:** Assembles the trimmed reads using `spades.py`.
+
+   Usage:
+   ```bash
+   bash runSpades.sh [NAME] [SRR_ID]
+   ```
+
+5. **runQuast.sh:** Analyzes the quality of the assembled genome using `quast.py`.
+
+   Usage:
+   ```bash
+   bash runQuast.sh [NAME]
+   ```
+
+### Output
+
+All results and logs will be organized in the following directory structure:
+
+```
+|-- data/
+|   |-- raw_data/
+|   |-- trimmed_data/
+|   |-- assembled_data/
+|-- logs/
+|-- quast_results/
+```
+
+- **data/raw_data/**: Contains downloaded NGS data.
+- **data/trimmed_data/**: Contains trimmed reads.
+- **data/assembled_data/**: Contains assembled genome sequences.
+- **logs/**: Contains logs for each step in the pipeline, organized by job name and job ID.
+- **quast_results/**: Contains results from the `quast.py` analysis.
+
+### Notes
+
+- Ensure that the Anaconda environment `BINF-12-2021` with all required tools is properly set up.
+- Ensure that you have sufficient storage space and permissions to write to the specified directories.
+- Always monitor the output logs to ensure that each step of the pipeline completes successfully.
 
 ## Authors
 
