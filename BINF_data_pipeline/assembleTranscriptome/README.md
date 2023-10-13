@@ -109,17 +109,83 @@ sbatch sbatch_transcriptome_PE.sh Sinorhizobium ERR11631749
 All results and logs will be organized in the following directory structure:
 
 ```
-|-- data/
-|   |-- raw_data/
-|   |-- trimmed/
-|-- results/
-|   |-- logs/
-|   |-- [NAME]/
-|       |-- trinity_de_novo/
-|       |-- trinity_de_novo.transdecoder_dir/
-|       |-- blastPep_args.outfmt6/
-|       |-- pfam.domtblout/
-|       |-- predictedProteins/
+.
+├── batch-assembleTransciptome_Rhodo_SRR21973231-38928767.output
+├── batch-assembleTranscriptome_Sinorhizobium_ERR11631749-38927552.output
+├── data
+│   ├── bam
+│   │   └── Rhodo
+│   │       └── Rhodo.sorted.bam
+│   ├── blastDB
+│   │   ├── swissProt.pdb
+│   │   └── ...
+│   ├── Pfam
+│   │   ├── Pfam-A.hmm
+│   │   └── ...
+│   ├── raw_data
+│   │   └── Sinorhizobium
+│   │       ├── ERR11631749_1.fastq
+│   │       └── ERR11631749_2.fastq
+│   ├── sam
+│   │   └── Rhodo
+│   │       └── Rhodo.sam
+│   └── trimmed
+│       ├── Rhodo
+│       │   └── SRR21973231.fastq
+│       └── Sinorhizobium
+│           ├── ERR11631749.R1.paired.fastq
+│           ├── ERR11631749.R1.unpaired.fastq
+│           ├── ERR11631749.R2.paired.fastq
+│           └── ERR11631749.R2.unpaired.fastq
+├── results
+│   ├── logs
+│   │   ├── assembleTransciptome_Rhodo_SRR21973231-38928767
+│   │   │   └── ...
+│   │   └── assembleTranscriptome_Sinorhizobium_ERR11631749-38927552
+│   │       └── ...
+│   ├── Rhodo
+│   │   ├── alignPredicted_addKEGGPathways.txt
+│   │   ├── alignPredicted_test.txt
+│   │   ├── alignPredicted.txt
+│   │   ├── assembleTransciptome_Rhodo_SRR21973231-38928767-trinity_de_novo_stats.txt
+│   │   ├── assembleTransciptome_Rhodo_SRR21973231-38928767-trinity_guided_stats.txt
+│   │   ├── blastPep_args.outfmt6
+│   │   ├── pfam.domtblout
+│   │   ├── trinity_de_novo
+│   │   │   ├── Trinity.fasta
+│   │   │   └── ...
+│   │   ├── trinity_guided
+│   │   │   ├── Trinity-GG.fasta
+│   │   │   └── ...
+│   │   ├── trinity_de_novo.transdecoder_dir
+│   │   │   └── ...
+│   │   ├── trinity_de_novo.transdecoder_dir.__checkpoints
+│   │   │   └── ...
+│   │   ├── trinity_de_novo.transdecoder_dir.__checkpoints_longorfs
+│   │   │   └── ...
+│   │   └── predictedProteins
+│   │       ├── Trinity.fasta.transdecoder.bed
+│   │       ├── Trinity.fasta.transdecoder.cds
+│   │       ├── Trinity.fasta.transdecoder.gff3
+│   │       └── Trinity.fasta.transdecoder.pep
+│   └── Sinorhizobium
+│       └── ...
+├── sbatch_assembleTransciptome_Rhodo_SRR21973231.sh
+├── sbatch_assembleTransciptome_Sinorhizobium_ERR11631749.sh
+└── scripts
+    ├── addKEGGPathways.py
+    ├── alignPredicted_args.sh
+    ├── analyzeTrinityDeNovo.sh
+    ├── analyzeTrinity.sh
+    ├── blastPep_args.sh
+    ├── getNGS.sh
+    ├── longOrfs_args.sh
+    ├── pfamScan_args.sh
+    ├── predictProteins_args.sh
+    ├── runTrinity.sh
+    ├── trimPE.sh
+    ├── trinityDeNovoPE.sh
+    └── trinityDeNovoSE.sh
 ```
 
 ### Notes
