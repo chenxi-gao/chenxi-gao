@@ -70,12 +70,79 @@ sbatch sbatch_script_name.sh Yersinia SRR26255229
 All results and logs will be organized in the following directory structure:
 
 ```
-|-- data/
-|   |-- raw_data/
-|   |-- trimmed_data/
-|   |-- assembled_data/
-|-- logs/
-|-- quast_results/
+├── batch-Rhodo-38927774.output
+├── batch-Yersinia-38927845.output
+├── data
+│   ├── assembled_data
+│   │   ├── Rhodo
+│   │   │   ├── contigs.fasta
+│   │   │   ├── contigs.paths
+│   │   │   ├── corrected
+│   │   │   │   ├── configs
+│   │   │   │   │   └── config.info
+│   │   │   │   ├── corrected.yaml
+│   │   │   │   ├── SRR522244.R1.paired.00.0_0.cor.fastq.gz
+│   │   │   │   ├── SRR522244.R2.paired.00.0_0.cor.fastq.gz
+│   │   │   │   └── SRR522244.R_unpaired.00.0_0.cor.fastq.gz
+│   │   │   ├── dataset.info
+│   │   │   ├── input_dataset.yaml
+│   │   │   ├── K21
+│   │   │   │   └── ...
+│   │   │   ├── K33
+│   │   │   │   └── ...
+│   │   │   ├── K55
+│   │   │   │   └── ...
+│   │   │   ├── misc
+│   │   │   │   └── broken_scaffolds.fasta
+│   │   │   ├── params.txt
+│   │   │   ├── scaffolds.fasta
+│   │   │   ├── scaffolds.paths
+│   │   │   ├── spades.log
+│   │   │   ├── tmp
+│   │   │   │   └── hammer_w_yi_8a1
+│   │   │   └── warnings.log
+│   │   └── Yersinia
+│   │       └── ...
+│   ├── raw_data
+│   │   ├── Rhodo
+│   │   │   ├── SRR522244_1.fastq
+│   │   │   └── SRR522244_2.fastq
+│   │   └── Yersinia
+│   │       ├── SRR26255229_1.fastq
+│   │       └── SRR26255229_2.fastq
+│   └── trimmed_data
+│       ├── Rhodo
+│       │   ├── SRR522244.R1.paired.fastq
+│       │   ├── SRR522244.R1.unpaired.fastq
+│       │   ├── SRR522244.R2.paired.fastq
+│       │   └── SRR522244.R2.unpaired.fastq
+│       └── Yersinia
+│           ├── SRR26255229.R1.paired.fastq
+│           ├── SRR26255229.R1.unpaired.fastq
+│           ├── SRR26255229.R2.paired.fastq
+│           └── SRR26255229.R2.unpaired.fastq
+├── logs
+│   ├── Rhodo-38927774
+│   │   └── ...
+│   └── Yersinia-38927845
+│       └── ...
+├── quast_results
+│   ├── Rhodo
+│   │   ├── report.html
+│   │   ├── report.pdf
+│   │   ├── report.tex
+│   │   ├── report.tsv
+│   │   ├── report.txt
+│   │   └── ...
+│   └── Yersinia
+│       └── ...
+├── sbatch_assembleGenome_Rhodo_SRR522244.sh
+├── sbatch_assembleGenome_Yersinia_SRR26255229.sh
+└── scripts
+    ├── getNGS.sh
+    ├── runQuast.sh
+    ├── runSpades.sh
+    └── trim.sh
 ```
 
 - **data/raw_data/**: Contains downloaded NGS data.
