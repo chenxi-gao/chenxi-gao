@@ -1,4 +1,4 @@
-# README for `addKEGGPathways.py`
+`addKEGGPathways.py`
 
 ## Description
 
@@ -72,7 +72,7 @@ TRINITY_DN21437_c0_g1_i1.p1     sp|Q13496|METN_CERS4  132     603     132     82
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License
 
 ## Acknowledgements
 
