@@ -56,13 +56,13 @@ The script generates an output file with additional columns appended to each lin
 ```
 ## Example input:
 ```
-TRINITY_DN21437_c0_g1_i1.p1     Q13496  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase
+TRINITY_DN21437_c0_g1_i1.p1     sp|Q13496|METN_CERS4  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase
 ```
 ## Example output:
 ```
-TRINITY_DN21437_c0_g1_i1.p1     Q13496  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko00562  Inositol phosphate metabolism
-TRINITY_DN21437_c0_g1_i1.p1     Q13496  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko01100  Metabolic pathways
-TRINITY_DN21437_c0_g1_i1.p1     Q13496  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko04070  Phosphatidylinositol signaling system
+TRINITY_DN21437_c0_g1_i1.p1     sp|Q13496|METN_CERS4  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko00562  Inositol phosphate metabolism
+TRINITY_DN21437_c0_g1_i1.p1     sp|Q13496|METN_CERS4  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko01100  Metabolic pathways
+TRINITY_DN21437_c0_g1_i1.p1     sp|Q13496|METN_CERS4  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko04070  Phosphatidylinositol signaling system
 ```
 
 ## Note
