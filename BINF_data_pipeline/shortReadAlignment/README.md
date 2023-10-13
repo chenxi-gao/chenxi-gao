@@ -84,12 +84,33 @@ sbatch sbatch_alignRNAseq.sh Rhodo SRR21973231
 All results and logs are organized within the following directory structure:
 
 ```
-|-- data/
-|   |-- raw_data/
-|   |-- trimmed_data/
-|   |-- aligned_data/
-|-- logs/
-|-- results/
+.
+├── batch-alignRNAseq-38927891.output
+├── data
+│   ├── aligned_data
+│   │   └── Rhodo
+│   │       ├── Rhodo.sam
+│   │       ├── Rhodo.sorted.bam
+│   │       └── Rhodo.sorted.bam.bai
+│   ├── raw_data
+│   │   └── Rhodo
+│   │       └── SRR21973231.fastq
+│   ├── RhodoGmapDb
+│   │   └── ...
+│   └── trimmed_data
+│       └── Rhodo
+│           └── SRR21973231.fastq
+├── logs
+│   └── alignRNAseq-38927891
+│       └── ...
+├── sbatch_alignRNAseq_Rhodo_SRR21973231.sh
+└── scripts
+    ├── alignReads.sh
+    ├── getNGS.sh
+    ├── gmap_build.sh
+    ├── indexSam.sh
+    ├── sortAlign.sh
+    └── trim.sh
 ```
 
 - **data/raw_data/**: Contains downloaded RNAseq data.
