@@ -58,31 +58,16 @@ Welcome to the Bioinformatics Tool Suite! This collection comprises a range of s
 
 ## 7. **Add KEGG Pathways** (`addKEGGPathways.py`)
 
-### Purpose
-Appends KEGG (Kyoto Encyclopedia of Genes and Genomes) Ortholog ID, Pathway ID, and Pathway Description to each SwissProt (Uniprot) ID based on BLAST output, and allows filtering the BLAST output based on a specified e-value threshold.
+- **Purpose:** Appends KEGG (Kyoto Encyclopedia of Genes and Genomes) Ortholog ID, Pathway ID, and Pathway Description to each SwissProt (Uniprot) ID based on BLAST output, and allows filtering the BLAST output based on a specified e-value threshold.
 
-### Prerequisites
-- **Python 3**
-- **requests**: Python library, install using: 
-  ```sh
-  pip install requests
-  ```
-
-### Usage
+- **Usage:** 
 ```sh
 $ python3 addKEGGPathways.py --input [input_filename] --evalue [evalue_threshold] --output [output_filename]
 ```
 
-### Arguments
-- `--input` or `-i`: Input filename (default: `alignPredicted.txt`).
-- `--evalue` or `-e`: E-value threshold (default: `1e-50`).
-- `--output` or `-o`: Output filename (default: `alignPredicted_addKEGGPathways.txt`).
+- **Output:** Appends KEGG Ortholog ID, Pathway ID, and Pathway Description to the input data and writes the appended data to the specified output file.
 
-### Output
-Appends KEGG Ortholog ID, Pathway ID, and Pathway Description to the input data and writes the appended data to the specified output file.
-
-### Detailed Information
-For additional details, examples, and troubleshooting, refer to the [Add KEGG Pathways README](./addKEGGPathways/README.md).
+- **Detailed Document** [Add KEGG Pathways README](./add_KEGG_pathways/README.md).
 
 ---
 
