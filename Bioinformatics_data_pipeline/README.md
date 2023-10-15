@@ -2,7 +2,7 @@
 
 This document provides an overview and instructions for three main pipelines used for the analysis of Next-Generation Sequencing (NGS) data. The pipelines cater to genomic, transcriptomic, and RNAseq alignment data. Each pipeline is designed to process data, trim the reads, and align or assemble them as per the requirements.
 
-![flowchart](https://github.com/chenxi-gao/workSample/blob/main/BINF_data_pipeline/BINF_data_pipeline.png)
+![flowchart](https://github.com/chenxi-gao/workSample/blob/main/Bioinformatics_data_pipeline/BINF_data_pipeline.png)
 
 ### 1. Genomic Data Analysis Pipeline
 
