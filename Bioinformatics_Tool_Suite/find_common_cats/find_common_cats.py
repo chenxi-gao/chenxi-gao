@@ -77,11 +77,9 @@ def get_cat_num(fh_gen):
             continue
 
     # sort the numbers of each category arranged in ascending order
-    counts = collections.Counter(cat_list)
-    counts_sort = dict(sorted([(v, k) for k, v in counts.items()]))
-    counts_new = dict(zip(counts_sort.values(), counts_sort.keys()))
+    sorted_counts = dict(sorted(counts.items(), key=lambda x: x[1]))
 
-    return counts_new
+    return sorted_counts
 
 
 def get_cat_des_dict(fh_cat):
