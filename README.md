@@ -28,7 +28,7 @@ This repository encompasses a diverse range of projects and scripts, providing a
 - **Technologies:** `fasterq-dump`, `trimmomatic`, `Trinity`, `TransDecoder`, `hmmscan`, `blastp`, and others.
 - **Detailed Pipelines:** [Genomic](./BINF_data_pipeline/assembleGenome/README.md), [Transcriptomic](./BINF_data_pipeline/assembleTranscriptome/README.md), and [RNAseq Alignment](./BINF_data_pipeline/shortReadAlignment/README.md).
   
-  [flowchart](https://github.com/chenxi-gao/workSample/blob/main/BINF_data_pipeline/BINF_data_pipeline.png)
+  ![flowchart](https://github.com/chenxi-gao/workSample/blob/main/Bioinformatics_data_pipeline/BINF_data_pipeline.png)
 
 ---
 
